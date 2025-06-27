@@ -663,7 +663,7 @@ footer p {
 
 .form-group input,
 .form-group textarea {
-  width: 100%;
+  width: 95%;
   padding: 0.75rem;
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -710,3 +710,83 @@ footer p {
 .contact-info a:hover {
   text-decoration: underline;
 }
+
+
+
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact-form, .message-list-container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+  
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+    
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .submit-btn {
+      background: #007BFF;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background: #0056b3;
+    }
+
+    .response {
+      color: green;
+      margin-top: 10px;
+    }
+
+    .message-list-container {
+      display: none;
+    }
+
+    .message-list li {
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+      position: relative;
+    }
+
+    .message-list li:last-child {
+      border-bottom: none;
+    }
+
+    .message-list .edit-btn {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .message-list .info {
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    .message-list .msg-content {
+      font-style: italic;
+      color: #555;
+    }
