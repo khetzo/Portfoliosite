@@ -175,12 +175,12 @@ a:hover {
 
 @media (max-width: 400px) {
   .popup-content {
-    width: 70%; /* Further scale down for very small screens */
+    width: 70%; 
     height: 70%;
   }
 
   .circle {
-    width: 70%; /* Further reduce the circle size */
+    width: 70%; 
     height: 70%;
   }
 
@@ -403,9 +403,18 @@ section {
   position: relative;
 }
 
+.details-container {
+  width: 100%; 
+  box-sizing: border-box;
+  overflow-wrap: break-word;  
+  word-wrap: break-word;
+  hyphens: auto;
+  overflow: hidden;
+}
+
 .about-containers {
-
-
+  display: flex; 
+  flex-wrap: wrap; /* allows items to wrap */
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
@@ -480,10 +489,14 @@ section {
 .experience-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
-  font-size: 1.75rem;
+  font-size: 1.2rem;
   margin-bottom: 2rem;
 }
-
+@media (max-width: 600px) {
+  .experience-sub-title {
+    font-size: 1.2rem; /* Adjusted font size for smaller screens */
+  }
+}
 .experience-details-container {
   display: flex;
   justify-content: center;
@@ -604,7 +617,7 @@ footer p {
   align-items: center;
   min-height: 120vh; /* Ensures the section covers the full viewport height */
   padding: 2rem;
-  background: linear-gradient(135deg, #6c63ff, #3f3f6c);
+  background-color: #14545a; /* Matches the body background */
   color: #fff;
 }
 
@@ -614,7 +627,8 @@ footer p {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 2rem;
-  max-width: 500px; /* Adjusted max-width for smaller content */
+   min-height: 110vh;
+  max-width: 110vh; /* Adjusted max-width for smaller content */
   width: 100%;
   margin: 0 auto; /* Center align the container */
 }
