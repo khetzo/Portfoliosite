@@ -45,19 +45,21 @@ function renderMessages() {
       <span class="edit-btn" title="Edit">✏️</span>
     `;
 
-    // Attempt to open WhatsApp silently (note: will still prompt)
-    const whatsappNumber = "27767786789"; // ✅ use your full international number without +
-    const whatsappText = `Name: ${msg.name}\nEmail: ${msg.email}\nMessage: ${msg.message}`;
-    const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappText)}`;
+    // Attempt to open WhatsApp after 5 seconds
+    setTimeout(() => {
+      const whatsappNumber = "27767786789"; // ✅ use your full international number without +
+      const whatsappText = `Name: ${msg.name}\nEmail: ${msg.email}\nMessage: ${msg.message}`;
+      const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappText)}`;
 
-    // Trigger link in a hidden way (some browsers will block this)
-    const a = document.createElement("a");
-    a.href = whatsappLink;
-    a.target = "_blank";
-    a.style.display = "none";
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
+      // Trigger link in a hidden way (some browsers will block this)
+      const a = document.createElement("a");
+      a.href = whatsappLink;
+      a.target = "_blank";
+      a.style.display = "none";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }, 5000);
 
     li.querySelector(".edit-btn").addEventListener("click", () => {
       editingIndex = index;
