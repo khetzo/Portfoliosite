@@ -36,23 +36,39 @@ form.addEventListener("submit", function (e) {
 
 function renderMessages() {
   messageList.innerHTML = "";
+
   messages.forEach((msg, index) => {
     const li = document.createElement("li");
     li.innerHTML = `
-        <div class="info"><strong>${msg.name}</strong> (${msg.email})</div>
-        <div class="msg-content">${msg.message}</div>
-        <span class="edit-btn" title="Edit">✏️</span>
-      `;
+      <div class="info"><strong>${msg.name}</strong> (${msg.email})</div>
+      <div class="msg-content">${msg.message}</div>
+      <span class="edit-btn" title="Edit">✏️</span>
+    `;
+
+    // Attempt to open WhatsApp silently (note: will still prompt)
+    const whatsappNumber = "27767786789"; // ✅ use your full international number without +
+    const whatsappText = `Name: ${msg.name}\nEmail: ${msg.email}\nMessage: ${msg.message}`;
+    const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappText)}`;
+
+    // Trigger link in a hidden way (some browsers will block this)
+    const a = document.createElement("a");
+    a.href = whatsappLink;
+    a.target = "_blank";
+    a.style.display = "none";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+
     li.querySelector(".edit-btn").addEventListener("click", () => {
       editingIndex = index;
       form.name.value = msg.name;
       form.email.value = msg.email;
       form.message.value = msg.message;
-
       formContainer.style.display = "block";
       messageListContainer.style.display = "none";
       responseMessage.textContent = "";
     });
+
     messageList.appendChild(li);
   });
 }
