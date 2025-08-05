@@ -1,54 +1,58 @@
-  const form = document.getElementById("contactForm");
-  const formContainer = document.getElementById("contactFormContainer");
-  const messageListContainer = document.getElementById("messageListContainer");
-  const messageList = document.getElementById("messageList");
-  const responseMessage = document.getElementById("responseMessage");
+const form = document.getElementById("contactForm");
+const formContainer = document.getElementById("Email-inTouch");
+const emailListing = document.getElementById("EmailListing");
 
-  let editingIndex = null;
-  const messages = [];
 
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
+const messageListContainer = document.getElementById("messageListContainer");
+const messageList = document.getElementById("messageList");
+const responseMessage = document.getElementById("responseMessage");
 
-    const name = form.name.value;
-    const email = form.email.value;
-    const message = form.message.value;
+let editingIndex = null;
+const messages = [];
 
-    if (editingIndex !== null) {
-      // Update existing message
-      messages[editingIndex] = { name, email, message };
-      editingIndex = null;
-    } else {
-      // Add new message
-      messages.push({ name, email, message });
-    }
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
 
-    renderMessages();
-    form.reset();
-    formContainer.style.display = "none";
-    messageListContainer.style.display = "block";
-    responseMessage.textContent = "Your email has been added to the list. You'll get a response soon.";
-  });
+  const name = form.name.value;
+  const email = form.email.value;
+  const message = form.message.value;
 
-  function renderMessages() {
-    messageList.innerHTML = "";
-    messages.forEach((msg, index) => {
-      const li = document.createElement("li");
-      li.innerHTML = `
+  if (editingIndex !== null) {
+    // Update existing message
+    messages[editingIndex] = { name, email, message };
+    editingIndex = null;
+  } else {
+    // Add new message
+    messages.push({ name, email, message });
+  }
+
+  renderMessages();
+  form.reset();
+  formContainer.style.display = "none";
+  emailListing.style.display = "block";
+  messageListContainer.style.display = "block";
+  responseMessage.textContent = "Your email has been added to the list. You'll get a response soon.";
+});
+
+function renderMessages() {
+  messageList.innerHTML = "";
+  messages.forEach((msg, index) => {
+    const li = document.createElement("li");
+    li.innerHTML = `
         <div class="info"><strong>${msg.name}</strong> (${msg.email})</div>
         <div class="msg-content">${msg.message}</div>
         <span class="edit-btn" title="Edit">✏️</span>
       `;
-      li.querySelector(".edit-btn").addEventListener("click", () => {
-        editingIndex = index;
-        form.name.value = msg.name;
-        form.email.value = msg.email;
-        form.message.value = msg.message;
+    li.querySelector(".edit-btn").addEventListener("click", () => {
+      editingIndex = index;
+      form.name.value = msg.name;
+      form.email.value = msg.email;
+      form.message.value = msg.message;
 
-        formContainer.style.display = "block";
-        messageListContainer.style.display = "none";
-        responseMessage.textContent = "";
-      });
-      messageList.appendChild(li);
+      formContainer.style.display = "block";
+      messageListContainer.style.display = "none";
+      responseMessage.textContent = "";
     });
-  }
+    messageList.appendChild(li);
+  });
+}
