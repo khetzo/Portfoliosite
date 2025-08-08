@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="leftsideCountainer.css" />
   <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 
@@ -38,382 +39,408 @@
       </div>
     </div>
   </nav>
-  <section id="profile">
-    <div class="section__pic-container">
-      <img src="./assets/profile_pic.jpeg" alt="Mbedzi mukhetwa profile picture" class="profile-pic" />
-    </div>
-    <div class="section__text">
-      <p class="section__text__p1">Hello, I'm</p>
-      <h1 class="title">Mbedzi Eli</h1>
-      <p class="section__text__p2">Software Developer</p>
-      <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
-          Download CV
-        </button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">
-          Contact Info
-        </button>
+  <div class="linkedin-profile-card">
+    <div class="profile-header">
+      <div class="profile-badge">
+        <span class="verification-badge">✓</span>
+        <h2>Mbedzi Mukhethwa</h2>
       </div>
-      <div id="socials-container">
-        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
-          onclick="location.href='https://https://www.linkedin.com/in/mbedzi-mukhetwa-62a89b183//'" />
-        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"
-          onclick="location.href='mailto:mbedzimukhethwa50@gmail.com'" />
-        <img src="./assets/github.png" alt="My Github profile" class="icon"
-          onclick="location.href='https://https://github.com/khetzo/khetzo/'" />
-        <button id="contactButton">Call Me</button>
-
-        <div id="popup" class="hidden">
-          <div class="popup-content">
-            <div class="circle">
-              <div class="icon">📞</div>
-            </div>
-            <p class="section__text__p1">phone connecting...</p>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-  <section>
-
-    <div class="analytics-card">
-      <div class="header">Analytics <span class="private">Private to you</span></div>
-
-      <div class="stats">
-        <div class="stat">
-          <div class="icon">👥</div>
-          <div>
-            <div class="value">3 profile views</div>
-            <div class="desc">Discover who's viewed your profile.</div>
-          </div>
-        </div>
-
-        <div class="stat">
-          <div class="icon">📊</div>
-          <div>
-            <div class="value">0 post impressions</div>
-            <div class="desc">Start a post to increase engagement.<br><small>Past 7 days</small></div>
-          </div>
-        </div>
-
-        <div class="stat">
-          <div class="icon">🔍</div>
-          <div>
-            <div class="value">1 search appearance</div>
-            <div class="desc">See how often you appear in search results.</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer">
-        <a href="#">Show all analytics →</a>
-      </div>
+      <p class="profile-title">Front-end Developer @ EC1 | Computer Science Graduate || University of Limpopo</p>
+      <p class="profile-org">Electronic Connect · University of Limpopo</p>
+      <p class="profile-location">Makhado, Limpopo, South Africa · <a href="#" class="contact-link">Contact info</a></p>
+      <p class="profile-website"><a href="https://khetzo.github.io/Portfoliosite/"
+          target="_blank">https://khetzo.github.io/Portfoliosite/</a></p>
+      <p class="profile-connections">58 connections</p>
     </div>
 
-  </section>
-  <section id="about">
-    <p class="section__text__p1">Get To Know More</p>
-    <h1 class="title">About Me</h1>
-    <br>
-    <br>
-    <div class="section-container">
+    <div class="profile-actions">
+      <button class="open-to-btn">Open to</button>
+      <button class="add-section-btn">Add profile section</button>
+    </div>
+  </div>
+  <div class="content-column">
+    <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/About_pic.png" alt="Profile picture" class="about-pic" />
+        <img src="./assets/profile_pic.jpeg" alt="Mbedzi mukhetwa profile picture" class="profile-pic" />
       </div>
-      <div class="about-details-container">
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Mbedzi Eli</h1>
+        <p class="section__text__p2">Software Developer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+            onclick="location.href='https://https://www.linkedin.com/in/mbedzi-mukhetwa-62a89b183//'" />
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"
+            onclick="location.href='mailto:mbedzimukhethwa50@gmail.com'" />
+          <img src="./assets/github.png" alt="My Github profile" class="icon"
+            onclick="location.href='https://https://github.com/khetzo/khetzo/'" />
+          <button id="contactButton">Call Me</button>
+
+          <div id="popup" class="hidden">
+            <div class="popup-content">
+              <div class="circle">
+                <div class="icon">📞</div>
+              </div>
+              <p class="section__text__p1">phone connecting...</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+
+      <div class="analytics-card">
+        <div class="header">Analytics <span class="private">Private to you</span></div>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="icon">👥</div>
+            <div>
+              <div class="value">3 profile views</div>
+              <div class="desc">Discover who's viewed your profile.</div>
+            </div>
+          </div>
+
+          <div class="stat">
+            <div class="icon">📊</div>
+            <div>
+              <div class="value">0 post impressions</div>
+              <div class="desc">Start a post to increase engagement.<br><small>Past 7 days</small></div>
+            </div>
+          </div>
+
+          <div class="stat">
+            <div class="icon">🔍</div>
+            <div>
+              <div class="value">1 search appearance</div>
+              <div class="desc">See how often you appear in search results.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer">
+          <a href="#">Show all analytics →</a>
+        </div>
+      </div>
+
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <br>
+      <br>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/About_pic.png" alt="Profile picture" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+              <h3>Experience</h3>
+              <p>2+ years <br />Frontend Development <br />1 year experince of <br /> full stack Developer </p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education icon" class="icon" />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree<br />in Mathematical and Computer Scince</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I’m a dedicated software developer with a strong focus on mobile development, proficient in Python
+              JavaScript and
+              React for creating high-performance, cross-platform applications.
+              My expertise extends to designing intuitive user interfaces using Adobe XD,
+              ensuring a seamless user experience.
+              On the backend, I’m experienced with SQL and MySQL, adept at
+              managing and optimizing databases to support robust and scalable
+              applications. My approach combines technical skills with a passion for
+              problem-solving, aiming to deliver innovative solutions and drive projec
+              t success.
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-            <h3>Experience</h3>
-            <p>2+ years <br />Frontend Development <br />1 year experince of <br /> full stack Developer </p>
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
           </div>
           <div class="details-container">
-            <img src="./assets/education.png" alt="Education icon" class="icon" />
-            <h3>Education</h3>
-            <p>B.Sc. Bachelors Degree<br />in Mathematical and Computer Scince</p>
-          </div>
-        </div>
-        <div class="text-container">
-          <p>
-            I’m a dedicated software developer with a strong focus on mobile development, proficient in Python
-            JavaScript and
-            React for creating high-performance, cross-platform applications.
-            My expertise extends to designing intuitive user interfaces using Adobe XD,
-            ensuring a seamless user experience.
-            On the backend, I’m experienced with SQL and MySQL, adept at
-            managing and optimizing databases to support robust and scalable
-            applications. My approach combines technical skills with a passion for
-            problem-solving, aiming to deliver innovative solutions and drive projec
-            t success.
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>mangoDB</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+                <br>
 
-          </p>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
-  </section>
-  <section id="experience">
-    <p class="section__text__p1">Explore My</p>
-    <h1 class="title">Experience</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">Frontend Development</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>HTML</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>CSS</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>SASS</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>JavaScript</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>TypeScript</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Material UI</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="details-container">
-          <h2 class="experience-sub-title">Backend Development</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>PostgreSQL</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>mangoDB</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>MySQL</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Node JS</h3>
-                <p>Intermediate</p>
-              </div>
-              <br>
-
-            </article>
-            <article>
-              <div>
-                <h3>AZURE</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Express JS</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Git</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
+              </article>
+              <article>
+                <div>
+                  <h3>AZURE</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
-  </section>
-  <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">My Software Development Program</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/marketplace.jpg" alt="Project 1" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Market Place</h2>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">My Software Development Program</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/marketplace.jpg" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Market Place</h2>
 
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/khetzo/Mapgeo2'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/khetzo?tab=repositories'">
-              Live Demo
-            </button>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/khetzo/Mapgeo2'">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/khetzo?tab=repositories'">
+                Live Demo
+              </button>
+            </div>
           </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/game.jpg" alt="Project 2" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Probability Game</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/khetzo/ProbabilityGame'">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/khetzo?tab=repositories'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/textToSpeach.webp" alt="Project 3" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Text->Speach</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://https://github.com/khetzo/text-to-speach'">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/khetzo?tab=repositories'">
+                clone app
+              </button>
+            </div>
+          </div>
+
         </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/game.jpg" alt="Project 2" class="project-img" />
+      </div>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/cameraAI.webp" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">CameraAI </h2>
+
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/khetzo/CameraAi'">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/khetzo?tab=repositories'">
+                Live Demo
+              </button>
+            </div>
           </div>
-          <h2 class="experience-sub-title project-title">Probability Game</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/khetzo/ProbabilityGame'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/khetzo?tab=repositories'">
-              Live Demo
-            </button>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/Istudy_app/icon.png" alt="Project 2" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">istudy app</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/khetzo/ISTUDY-APP'">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/khetzo?tab=repositories'">
+                Live Demo
+              </button>
+            </div>
           </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/Ecomence/delevaryapp.jpg" alt="Project 3" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Delevary App</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/khetzo/WHICHQ-APP'">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/khetzo?tab=repositories'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+
         </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/textToSpeach.webp" alt="Project 3" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Text->Speach</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://https://github.com/khetzo/text-to-speach'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/khetzo?tab=repositories'">
-              clone app
-            </button>
-          </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+
+
+    <section id="contact">
+      <div class="contact-info-upper-container">
+      </div>
+    </section>
+    <section class="contact-section" id="Email-inTouch">
+      <div class="contact-container ">
+        <h1 class="contact-title">Get in Touch</h1>
+        <p class="contact-description">I'd love to hear from you! Please fill out the form below or reach out to me
+          directly through email.</p>
+        <div class="contact-form" id="contactFormContainer">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+            <div class="response" id="responseMessage"></div>
+          </form>
         </div>
 
       </div>
-    </div>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/cameraAI.webp" alt="Project 1" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">CameraAI </h2>
+    </section>
 
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/khetzo/CameraAi'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/khetzo?tab=repositories'">
-              Live Demo
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/Istudy_app/icon.png" alt="Project 2" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">istudy app</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/khetzo/ISTUDY-APP'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/khetzo?tab=repositories'">
-              Live Demo
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/Ecomence/delevaryapp.jpg" alt="Project 3" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Delevary App</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/khetzo/WHICHQ-APP'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/khetzo?tab=repositories'">
-              Live Demo
-            </button>
-          </div>
-        </div>
-
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-  </section>
-
-
-  <section id="contact">
-    <div class="contact-info-upper-container">
-    </div>
-  </section>
-  <section class="contact-section" id="Email-inTouch">
-    <div class="contact-container ">
-      <h1 class="contact-title">Get in Touch</h1>
-      <p class="contact-description">I'd love to hear from you! Please fill out the form below or reach out to me
-        directly through email.</p>
-      <div class="contact-form" id="contactFormContainer">
-        <form id="contactForm">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-          </div>
-          <button type="submit" class="submit-btn">Send Message</button>
-          <div class="response" id="responseMessage"></div>
-        </form>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="EmailListing" class="contact-section" style="display: none;">
-    <div class="message-list-container" id="messageListContainer">
-      <h2>Submitted Messages</h2>
-      <ul class="message-list" id="messageList">
+    <section id="EmailListing" class="contact-section" style="display: none;">
+      <div class="message-list-container" id="messageListContainer">
         <h2>Submitted Messages</h2>
-      </ul>
-    </div>
-  </section>
+        <ul class="message-list" id="messageList">
+          <h2>Submitted Messages</h2>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+
+
   <footer>
     <nav>
       <div class="nav-links-container">
