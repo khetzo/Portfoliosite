@@ -10,6 +10,7 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: #14545a;
+  line-height: 1;
 }
 
 html {
@@ -37,7 +38,7 @@ nav,
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  height: 15vh;
 }
 
 .nav-links {
@@ -305,15 +306,24 @@ a:hover {
 /* SECTIONS */
 
 section {
-  padding-top: 4vh;
-  height: 96vh;
+
+  margin-top: 0;
+  padding-top: 0;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
 }
 
+
+
+section:first-of-type {
+  padding-bottom: 0;
+  margin-bottom: -2rem;
+}
+
 .section-container {
   display: flex;
+
 }
 
 /* PROFILE SECTION */
@@ -322,13 +332,15 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  margin-top: 0.5rem;
+  height: auto;
+  background-color: chocolate;
 }
 
 .section__pic-container {
   display: flex;
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   margin: auto 0;
   opacity: 0;
   transform: translateX(-100%);
@@ -368,7 +380,7 @@ section {
 
 .section__text__p2 {
   font-size: 1.75rem;
-  margin-bottom: 1rem;
+
 }
 
 .title {
@@ -438,10 +450,19 @@ section {
   gap: 1rem;
 }
 
+#analytics {
+  position: relative;
+
+  background-color: rgb(222, 166, 117);
+
+}
+
 /* ABOUT SECTION */
 
 #about {
+  margin-top: 4rem;
   position: relative;
+  background-color: rgb(90, 83, 77);
 }
 
 .details-container {
@@ -519,11 +540,6 @@ section {
   height: 80%;
 }
 
-.section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
-}
 
 /* EXPERIENCE SECTION */
 
@@ -848,4 +864,94 @@ textarea {
 .message-list .msg-content {
   font-style: italic;
   color: #555;
+}
+
+
+
+/* Replace your current analytics card CSS with this */
+.analytics-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  max-width: 850px;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+
+  /* Centers the card */
+}
+
+.header {
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+}
+
+.private {
+  font-size: 12px;
+  color: gray;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.icon {
+  align-self: start;
+  margin: 1px;
+  font-size: 20px;
+}
+
+.value {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.desc {
+  font-size: 12px;
+  color: gray;
+}
+
+.footer {
+  text-align: center;
+  border-top: 1px solid #eee;
+  margin-top: 10px;
+  padding-top: 8px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #0073b1;
+  font-size: 13px;
+}
+
+/*  media queries for responsiveness */
+@media screen and (max-width: 900px) {
+  .analytics-card {
+    max-width: 95%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .stat {
+    align-items: flex-start;
+  }
 }

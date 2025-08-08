@@ -1,12 +1,12 @@
 @media screen and (max-width: 1400px) {
   #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
+    height: 50vh;
+    margin-bottom: 0.5rem;
   }
 
   .about-containers {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -50,8 +50,8 @@
   }
 
   .section__pic-container {
-    width: 275px;
-    height: 275px;
+    width: 255px;
+    height: 255px;
     margin: 0 auto 2rem;
   }
 
@@ -102,7 +102,7 @@
   }
 
   #profile {
-    height: 83vh;
+    height: 50vh;
     margin-bottom: 0;
   }
 
