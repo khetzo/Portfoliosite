@@ -45,9 +45,9 @@ function renderMessages() {
       <span class="edit-btn" title="Edit">✏️</span>
     `;
 
-    // Attempt to open WhatsApp after 5 seconds
+    
     setTimeout(() => {
-      const whatsappNumber = "27767786789"; // ✅ use your full international number without +
+      const whatsappNumber = "27767786789"; //
       const whatsappText = `Name: ${msg.name}\nEmail: ${msg.email}\nMessage: ${msg.message}`;
       const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappText)}`;
 
