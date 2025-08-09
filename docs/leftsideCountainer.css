@@ -22,7 +22,7 @@
 
 .content-column {
     margin-left: 320px;
-    /* Card width + spacing */
+   
     flex: 1;
     padding: 20px;
     overflow-x: hidden;

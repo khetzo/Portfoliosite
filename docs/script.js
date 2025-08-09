@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
     
     popup.style.display = 'flex';
 
-    // Delay the actions by 2 seconds
     setTimeout(function () {
      
       window.location.href = 'tel:+27767786789';
